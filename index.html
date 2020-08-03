@@ -36,10 +36,15 @@ body{font-family: Roboto;}blockquote{border-color: #4ea2e3;}.display-1{font-fami
         alert("Coming Soon ..");
 		}
 		
-				function goToServices(){
-					window.location.hash = '';
+function goToServices(){
+	if ( $.browser.webkit == false ) {
+            	window.location.hash = '';
 		window.location.hash = "services";
-		}
+        } else {
+		window.location.href = '';
+            	window.location.href = "services";
+        }				
+}
 		
 
 		function goToAbout(){

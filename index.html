@@ -46,8 +46,16 @@ function goToServices(){
         }				
 }
 		
-
-		function goToAbout(){
+function goToAbout(){
+	if ( $.browser.webkit == false ) {
+            	window.location.hash = '';
+		window.location.hash = "about";
+        } else {
+		window.location.href = '';
+            	window.location.href = "about";
+        }				
+}
+	function goToAbout3(){
 			window.location.hash = '';
 		window.location.hash = "about";
 		}

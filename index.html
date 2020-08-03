@@ -49,10 +49,10 @@ function goToServices(){
 function goToAbout(){
 	if ( $.browser.webkit == false ) {
             	window.location.hash = '';
-		window.location.hash = "tab1-f";
+		window.location.hash = "about";
         } else {
 		window.location.href = '';
-            	window.location.href = "tab1-f";
+            	window.location.href = "about";
         }	
 
 $( "#tabs" ).tabs({ active: 0 });			
@@ -62,10 +62,10 @@ $( "#tabs" ).tabs({ active: 0 });
 function goToContact(){
 	if ( $.browser.webkit == false ) {
             	window.location.hash = '';
-		window.location.hash = "tab1-f";
+		window.location.hash = "about";
         } else {
 		window.location.href = '';
-            	window.location.href = "tab1-f";
+            	window.location.href = "about";
         }	
 
 $( "#tabs" ).tabs({ active: 1 });			
@@ -374,11 +374,11 @@ function credits(){
     </div>
 </section>
 
-<section class="mbr-section tab1 cid-s6pSSFsHpp" id="tab1-f">
-
+<section class="mbr-section tab1 cid-s6pSSFsHpp">
+ <a name='about'></a>
     <div class="container"> 
         <amp-selector role="tablist" layout="container" class="ampTabContainer">
-            <div role="tab" class="tab-button" option="a"> <a name='about'></a>
+            <div role="tab" class="tab-button" option="a">
                 <h3 class="tab-head mbr-fonts-style mbr-white mbr-light display-2">About me</h3>
             </div>
             <div role="tabpanel" class="tab-content">

@@ -35,7 +35,7 @@ function yourBlogs(){
        // let d = new Date();
        alert("Coming Soon ..");
 }
-		
+	
 function goToServices(){
 	if ( $.browser.webkit == false ) {
             	window.location.hash = '';
@@ -49,16 +49,27 @@ function goToServices(){
 function goToAbout(){
 	if ( $.browser.webkit == false ) {
             	window.location.hash = '';
-		window.location.hash = "about";
+		window.location.hash = "tab1-f";
         } else {
 		window.location.href = '';
-            	window.location.href = "about";
+            	window.location.href = "tab1-f";
         }	
 
-$( "#tabs" ).tabs({ active: 2 });			
+$( "#tabs" ).tabs({ active: 0 });			
 }
 
 
+function goToContact(){
+	if ( $.browser.webkit == false ) {
+            	window.location.hash = '';
+		window.location.hash = "tab1-f";
+        } else {
+		window.location.href = '';
+            	window.location.href = "tab1-f";
+        }	
+
+$( "#tabs" ).tabs({ active: 1 });			
+}
 	      
 function credits(){
         alert("Salesforce is Trademark of salesforce.com, inc. \nWebsite template is copyright of Mobirise\nImages are courtesy of krzysztof-m on pixabay");
@@ -365,9 +376,7 @@ function credits(){
 
 <section class="mbr-section tab1 cid-s6pSSFsHpp" id="tab1-f">
 
-    
-
-    <div class="container" id='about'> 
+    <div class="container"> 
         <amp-selector role="tablist" layout="container" class="ampTabContainer">
             <div role="tab" class="tab-button" option="a"> <a name='about'></a>
                 <h3 class="tab-head mbr-fonts-style mbr-white mbr-light display-2">About me</h3>
